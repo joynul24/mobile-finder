@@ -49,14 +49,14 @@
     <!-- Input with icon -->
     <div class="flex items-center w-full sm:w-auto flex-grow">
       <i class="mr-2 fa-solid fa-magnifying-glass text-gray-600"></i>
-      <input
+      <input id="input-search"
         class="py-2 sm:py-3 w-full outline-none border-none bg-transparent"
         type="text"
         placeholder="Search your phone"
       />
     </div>
     <!-- Button -->
-    <button
+    <button onclick="handleSearchBtn()" id="btn-search"
       class="btn btn-regular w-full sm:w-auto"
       style="border-radius: 100px;"
     >
@@ -66,6 +66,18 @@
        </div>
 
     </section>
+
+    <!-- Spinner -->
+   <div id="spinner" class="hidden mt-5 lg:mt-10"> <div class="spinner">
+   </div> 
+    <p class="text-center mt-3 text-amber-600">Loading...</p>
+   </div>
+
+    <!-- Phones Container -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 md:mt-20" id="phones-container">
+      <!-- show all phones -->
+    </section>
+    
 
    <footer class="mt-10 lg:mt-20 bg-gray-100 text-base-content rounded p-6 sm:p-10">
   <!-- Links -->
